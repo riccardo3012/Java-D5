@@ -8,6 +8,24 @@ public class Video extends ElementoMultimediale {
         this.volume = volume;
         this.durata = durata;
 
+    } public void setDurata(int durata) {
+        this.durata = durata;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public int getLuminosita() {
+        return luminosita;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
     }
     public int getDurata() {
         return durata;
@@ -22,19 +40,13 @@ public class Video extends ElementoMultimediale {
         }
     }
     public void play(){
-        for(int i = 0; i<durata; i++){
-
-        for (int j = 0;j<volume;j++){
-            System.out.printf(titolo + " " + "!".repeat(j+1) );
-        }
-            for (int k = 0;k<luminosita;k++){
-                System.out.printf(titolo + " " + "*".repeat(k+1) );
-            }
-        }
+        System.out.printf(titolo + " " +durata+" "+volume +" "+luminosita);
     }
     @Override
     public void esegui(){
         play();
 
     }
+
+
 }

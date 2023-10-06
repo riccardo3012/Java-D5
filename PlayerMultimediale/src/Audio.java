@@ -10,12 +10,12 @@ public int durata;
         this.durata = durata;
     }
 
-    public int getLuminosita() {
+    public int getVolume() {
         return volume;
     }
 
-    public void setLuminosita(int luminosita) {
-        this.volume = luminosita;
+    public void setVolume(int luminosita) {
+        this.volume = volume;
     }
 
     public int getDurata() {
@@ -27,10 +27,8 @@ public int durata;
     }
 
     public void play(){
-        for (int i =0;i<durata;i++);
 
-        for (int i =0;i<volume;i++);
-        System.out.printf(titolo + " " +durata+volume);
+        System.out.printf(titolo + " " +durata+" "+volume);
     }
 
 public void abbassaVolume() {
